@@ -1,0 +1,424 @@
+/*  
+Theme Name: PSU Default 9spot
+Theme URI: http://www.plymouth.edu
+Description: Temporary theme to bridge the gap between 9spot and Gantry
+Author: Matthew Batchelder & Hyung Park
+Author URI: http://www.plymouth.edu
+Template: 9spot-clone
+Version: 0.1
+
+	This theme uses the 960 Grid System by Created by Nathan Smith. 
+	See the official site for more info: http://960.gs/
+*/
+#body-wrapper, #avant-body-wrapper  {background: url(/wp-content/themes/9spot-psu/images/220_green_top.png) transparent top repeat-y; min-width:1000px;}
+	/***********
+	just a quick markup, revisit #nav-wrapper, #main-nav
+	************/
+	/*#nav-wrapper{margin-left:-51px;}*/
+	.nines-layout-a4b8c4d0 #nav-wrapper, .nines-layout-a4b12c0d0 #nav-wrapper, .nines-layout-a4b11c1d0 #nav-wrapper, .nines-layout-a4b11c0d0  #nav-wrapper{background: url(/wp-content/themes/9spot-psu/images/nav_left_column.png) transparent top center no-repeat;
+		font-size: 15px;
+		/*height: 48px;*/
+		height: 63px;
+		min-width:1000px;
+		font-weight:bold;
+		margin:0 auto;}
+	.nines-layout-a0b16c0d0 #nav-wrapper{background: url(/wp-content/themes/9spot-psu/images/nav_one_column.png) transparent top center no-repeat;
+		font-size: 15px;
+		/*height: 48px;*/
+		height: 63px;
+		min-width:1000px;
+		font-weight:bold;
+		margin:0 auto;}
+			
+/*left nav */
+#body-wrapper ul.menu {margin-bottom: 15px; } 
+#body-wrapper ul.menu li, #body-wrapper ul.menu li a {font-size: 13px;  padding: 2px 0; color:#006b62;}
+#body-wrapper ul.menu ul {margin: 10px 0 5px 10px; border-left: solid 1px #d9d9d9; padding-left: 10px; }
+#body-wrapper ul.menu ul li {border: none; font-size: 13px; font-weight: normal; padding:0 0 6px 0;}  
+#body-wrapper ul.menu ul li a {font-size: 12px;} 
+#body-wrapper ul.menu li a:hover {color:#8ea09a; text-decoration:none;}
+#body-wrapper ul.menu li.current-menu-item >  a {color: #c44600; font-weight: bold; } 
+#body-wrapper ul.menu li.current-menu-item >  a:hover {color: #8ea09a;}			
+/*one column*/			
+	.nines-layout-a0b16c0d0 #body-wrapper{
+    background: url(/wp-content/themes/9spot-psu/images/220_green_top_1col.png) transparent top repeat-y;}	
+	.nines-layout-a0b16c0d0  #foot-wrapper {
+    background: url(/wp-content/themes/9spot-psu/images/220_bg_1col.png) transparent top repeat-y;}	
+	.nines-layout-a0b16c0d0 .container_16 .grid_1 {
+    width: 0;}
+	.nines-layout-a0b16c0d0 .grid_16 .nines-body-2 {
+    margin-left: 20px;
+    width: 900px;
+}
+	
+/* Footer */
+	#apres-foot-wrapper{background:#4b4b4c url(/wp-content/themes/9spot-psu/images/footer_bg_960.jpg) center repeat-y;}
+	
+	#webapp-final, #footer {
+		color: #fff;
+		font-weight: bold;
+		
+	
+	}
+	#webapp-final p, #footer p {margin: 0 0 10px 0;}
+	#webapp-final a, #webapp-final a:visited, #footer a, #footer a:visited {color: #4d8681;}
+		#footer li {
+			/*color: #ccdb85;
+			display: inline;
+			margin: 0 6px 0 0;*/
+			margin-left:20px; padding-top:13px; color:#fff; font-size:11px; list-style:disc outside none;
+		}
+			#footer li a, #footer li a:visited { color: #dddddd;	padding: 0 4px 0 0; }
+			#footer li a:hover {color:#ffffff; text-decoration:none;}
+		#footer p.weather {margin: 10px 0 25px 0;}
+		/*.nines-foot-a4b4c4d4 .grid_16 {
+		 background: -moz-linear-gradient(top, rgba(62,62,63,0.65) 0%, rgba(0,0,0,0) 100%); 
+		 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(62,62,63,0.65)), color-stop(100%,rgba(0,0,0,0)));
+		 background: -webkit-linear-gradient(top, rgba(62,62,63,0.65) 0%,rgba(0,0,0,0) 100%); 
+		 background: -o-linear-gradient(top, rgba(62,62,63,0.65) 0%,rgba(0,0,0,0) 100%);
+		 background: -ms-linear-gradient(top, rgba(62,62,63,0.65) 0%,rgba(0,0,0,0) 100%); 
+		 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a63e3e3f', endColorstr='#00000000',GradientType=0 );
+		 background: linear-gradient(top, rgba(62,62,63,0.65) 0%,rgba(0,0,0,0) 100%); 
+		 padding: 20px 0; 
+		}*/
+.nines-apres-foot_1	.widget-inner {padding:40px 20px 0 20px;color:#eee; font-size:smaller;}	
+.nines-apres-foot_1	.widget-inner a {color:#fff; }	
+.textwidget-weather {background: -moz-linear-gradient(top, rgba(62,62,63,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(62,62,63,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(62,62,63,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(62,62,63,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera11.10+ */
+background: -ms-linear-gradient(top, rgba(62,62,63,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a63e3e3f', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+background: linear-gradient(top, rgba(62,62,63,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+    behavior: url(/css/border-radius.htc);
+    border-radius: 6px;
+	-moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
+padding: 5px 10px;
+border-color: #454545;
+    border-style: solid;
+	border-bottom-width:thin;
+  
+}
+.jumpmenu{
+	background: ;
+	width: 160px;
+}
+#widget-text-10 li {
+	list-style-type:none;
+	 padding: 6px 0;
+	  width: 160px;
+	  margin:0;}
+/* Footer */
+
+/******************************
+ * END COMMON
+ ******************************/
+
+/******************************
+ * INNER
+ ******************************/
+#nav-sep .inner,
+#banner-image {
+	display:none;
+}
+
+#nav-sep .inner .extra{
+	display:none;
+	height: 0px;
+}
+#foot-wrapper {background:url(/wp-content/themes/9spot-psu/images/220_bg.png) top center repeat-y; min-width:1000px;
+}
+.nines-body .inner,
+.nines-avant-body .inner,
+.nines-apres-body .inner {
+    padding: 6px 0;
+}
+.nines-body-a4b8c4d0 .inner,
+.nines-avant-body-a4b8c4d0 .inner,
+.nines-apres-body-a4b8c4d0 .inner {}
+			#related-sites {
+				border-top: 1px solid #d9d9d9;
+				margin: 20px 15px;
+				padding: 5px 0 20px 0;
+			}
+				#related-sites h5 {
+					font-size: 14px;
+					font-weight: bold;
+					margin: 0 0 10px 0;
+				}
+				#related-sites ul {margin: 0;}
+					#related-sites a, #related-sites a:visited {
+						background: url(/templates/hero/images/bkgd-external-link.gif) transparent right 3px no-repeat;
+						color: #333;
+						padding: 0 20px 0 0;
+					}
+						#related-sites a:hover {font-weight: normal;}
+	.nines-body-2 {
+		font-size: 13px;
+		line-height: 1.5;
+	}
+		.nines-body-2 .widget_breadcrumbs ul, .nines-body-2 #social-tools ul {
+			list-style: none;
+			margin: 0;
+		}
+		.widget_breadcrumbs ul li {
+			display: inline;
+			font-size: 11px;
+			font-weight: bold;
+		}
+			.widget_breadcrumbs ul a, .widget_breadcrumbs ul a:visited {
+				background: url(/templates/hero/images/bkgd-breadcrumb.gif) transparent right center no-repeat;
+				color: #999;
+				font-weight: normal;
+				padding: 0 10px 0 0;
+			}
+
+			.widget_breadcrumbs ul li:last-child a{
+				background-image: none;
+				color: #999;
+			
+				padding: 0;
+			}
+		#social-tools {
+			font-size: 12px;
+			margin: 0 0 0 0;
+			padding: 5px 2px;
+		}
+			#social-tools li {display: inline;}
+			#social-tools a, #social-tools a:visited {
+				background: url(/templates/hero/images/bkgd-icons-social.png) transparent left 2px no-repeat;
+				color: #666;
+				margin: 0 10px 0 0;
+				padding: 1px 0 0 18px;
+			}	
+				#social-tools .share a, #social-tools .share a:visited {background-position: bottom left;}
+
+	.psu_widget_deptheader h1.department a,
+	.psu_widget_deptheader h1.department{ font-size: 1.5em; }
+	
+	.nines-body-2 ol, .nines-body-2 ul {margin: 0 25px 25px 25px;}
+		.nines-body-2 ol {list-style: decimal;}
+		.nines-body-2 ul {list-style: disc;}
+		.nines-body-2 li {margin: 0 0 10px 0;}
+	p.source {margin: 0 0 25px 0;}
+	
+	/*.nines-body-a4b12c0d0 .grid_16 {background:#fff url(/wp-content/themes/9spot-psu/images/left_column.gif) left top repeat-y; }*/
+	
+/* Right Column */
+	.nines-body-3 {
+		line-height: 1.4;
+		padding: 0;
+		border-left: 1px dotted #D9D9D9; margin-top:36px;
+	}
+	.nines-body-3 .widget{
+		margin: 0 13px 0 10px;
+	}
+		.nines-body-3 .widgettitle,
+		.nines-body-3 h4 {
+			color: #8ea09a;
+			/*font-size: 21px;*/
+			font-size: 13px;
+			margin: 0 0 8px 0;
+			text-transform:uppercase;
+			letter-spacing:1px;
+		}
+		.nines-body-3 .post h2,
+		.nines-body-3 .post h2 a,
+		.nines-body-3 h5 {
+			color: #c44600;
+			font-size: 12px;
+			font-weight:normal;
+			line-height: 1.2;
+			margin: 0 0 5px 0;
+		}
+		
+/* Right Column Callouts */
+		.nines-body-3 .callout {
+			margin: 0 0 20px 0;
+			padding: 0 10px;
+		}
+		.nines-body-3 img {margin: 0 0 10px 0;}		
+/* Right Column Quotes */
+		.nines-body-3 .quote {background: url(/templates/hero/images/bkgd-quote-top.gif) transparent top left no-repeat;}
+			.nines-body-3 .quote .content {
+				background: url(/images/bkgd-quote-btm.gif) transparent bottom right no-repeat;
+				font-family: 'Lato',Georgia, Times, serif;
+				font-size: 16px;
+				padding: 10px 10px 0 15px;
+			}
+				.nines-body-3 .quote .content p {margin: 0 0 5px 0;}
+			.nines-body-3 .quote .source {
+				font-size: 12px;
+				padding: 0 10px 0 15px;
+			}
+		.nines-body-3 a, .nines-body-3 a:visited {color: #4b7571;}
+		
+/* Admissions Template */
+p.lead-in, p.follow-up {
+	font-family: 'Lato',Georgia, Times, serif;
+	font-size: 24px;
+}
+p.follow-up {font-size: 16px;}
+figcaption {
+	color: #32746c;
+	display: block;
+	font-size: 13px;
+}
+.nines-body-2 section {
+	border-top: 1px solid #d9d9d9;
+	padding: 5px 0 20px 0;
+}
+	section#questions {
+		width: 270px;
+		margin-right: 1px;
+	}
+	section#facebook {width: 173px;}
+	#blogs {clear: both;}
+	h2.section {
+		font-family: 'Lato', Arial, Verdana, Helvetica, sans-serif;
+		font-size: 13px;
+	}
+	h3.large {
+		color: #32746c;
+		font-size: 24px;
+		line-height: 1.3;
+		margin: 0 0 5px 0;
+	}
+	.questions {color: #32746c;}
+
+/******************************
+ * END INNER
+ ******************************/
+
+/******************************
+ * BEGIN copyright
+ ******************************/
+.psu_widget_copyright{ color: white; font-weight: bold; }
+.psu_widget_copyright span.gc-cs-link, .psu_widget_copyright a{ color: white; }
+.psu_widget_copyright .unit .organization-name{display: none;}
+
+/******************************
+ * END copyright
+ ******************************/
+
+/******************************
+ * BEGIN widget styles
+ ******************************/
+ /*.widget_postloop .widget-inner {padding-left:20px;}
+#widget-postloop-4  .widget-inner {border-left: 1px dotted #D9D9D9; margin-top:36px;}*/
+/* .nines-foot_1 li {line-height:20px; font-size:smaller; font-weight:bold; list-style:disc outside none; color:#ccc; margin-left:20px;}*/
+
+
+.post img{ border: 1px solid #888; }
+.post img.noborder{ border: none; }
+
+.nines-body-2 .post .entry a:hover{
+	color: #da6e3d;
+}
+
+.nines-body-2 .widget_pagednav,
+.nines-body-2 .psu_widget_deptheader{
+	border:none !important;
+	margin-bottom: 0 !important;
+	padding-top: 0 !important;
+}
+.nines-body-2 .widget_pagednav{
+	margin-bottom: 0.5em !important;
+}
+
+
+.nines-body-2 .widget{
+	/*border-top: 1px solid #d9d9d9;*/
+	margin-bottom: 1.5em;
+	padding-top: 0.5em;
+}
+
+.nines-body-2 .widget_breadcrumbs,
+.nines-body-2 .widget:first-child{
+	border: none;
+	margin-bottom: 0.5em;
+	padding-top: 0;
+}
+
+.nines-body-2 .widgettitle{
+	color: #555;
+	font-family: 'Lato',Arial, Helvetica, Sans-Serif;
+	font-size: 1em;
+}
+
+.nines-body-2 .post h2,
+.nines-body-2 .post h2 a,
+.nines-body-2 .page h2,
+.nines-body-2 .page h2 a{
+	color: #307769;
+	font-size: 1.12em;	
+	font-weight: normal;
+}
+
+.nines-body-2 .post .entry h2,
+.nines-body-2 .post .entry h2 a,
+.nines-body-2 .page .entry h2,
+.nines-body-2 .page .entry h2 a{
+	color: #000;
+	font-size: 1.3em;	
+	font-weight: bold;
+}
+
+.post h1,
+.post h1 a{
+	font-size: 1.3em;
+}
+
+div.contents h3{margin:2px 0 5px 0; }
+div.contents{border:1px solid #eaeaea; background-color:#f3f3f3; float:right; font-size:0.9em; width:160px; margin:5px;}
+#body div.contents ol{ padding: 0; margin-bottom:0; }
+#body div.contents ul{ padding:0; list-style-position:outside; }
+#body .nines-body-2 div.innerindex {padding:5px;}
+
+
+#post-162 h2,
+#post-162 h2 a{
+	color: #000;
+	font-size: 1.5em;
+	font-weight: normal;
+}
+
+#foot h2 {color:#eee; padding-top:5px; font-weight:normal;}
+#foot h3 {color:#eee; padding: 0 0 3px 0; border-bottom-style: solid; border-color:#999;border-width: thin; font-size:12px; line-height:2.0em;}
+#footer h3 a, #footer h3 a:visited {color:#dddddd;}
+#footer h3 a:hover {color:#ffffff; text-decoration:none;}
+.textwidget li {margin-left:20px; padding-top:16px; color:#fff; font-size:smaller; font-weight:bold; list-style:disc outside none;}
+.nines-foot_1 .widget-inner,.nines-foot_3 .widget-inner{width: 160px; padding-left:14px;}
+.nines-foot_3 .textwidget {padding-top:12px; padding-left:16px; line-height:16px;}
+.nines-foot_2 .widget-inner {width:160px; margin-left:-30px;}
+
+.nines-foot_4 .widget-inner{width: 230px; padding-left:16px;}
+
+/* Hides Thumbnails for In Plymouth Magazine Posts in Right Column */
+#body .nines-body-3 .category-features a img  {display:none;}
+
+/* Left aligns  post icons in right column for magazine stories */	 
+#body .nines-body-3 .category-features a.wrapper-image{float:left; padding:5px 5px 0 0;}
+#body .nines-body-3 .category-features a.wrapper-image img{display:inline;}
+
+#ninescredit{display: none;}
+
+small { font-size: smaller; }
+#body small a {
+	font-size: inherit;
+	font-family: inherit;
+}
+.widget-inner p { font-size: smaller;}
+.entry p {font-size:13px; color:#555555;}
+#widget-postloop-4 p {font-size:12px;}
+/* struct960.css overide*/
+.nines-foot-a4b4c4d4 {padding:30px 0 0 0; }
+.container_12 .grid_3, .container_16 .grid_4 {
+    width: 200px;}
+.grid_16 .nines-foot_4 {width:240px; margin-left:30px;}
+.grid_16 .nines-body-2 {margin-left:30px; width:470px;}
+.nines-layout-a4b12c0d0 .grid_16 .nines-body-2 {margin-left:30px; width:670px;}
+.grid_16 .nines-foot_2, .grid_16 .nines-foot_3 {width:180px;}
